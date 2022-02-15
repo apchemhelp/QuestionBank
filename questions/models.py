@@ -3,9 +3,11 @@ import random
 
 # Create your models here.
 class AnswerChoice(models.Model):
+	id = models.AutoField(primary_key=True)
 	text = models.TextField()
 
 class Question(models.Model):
+	id = models.AutoField(primary_key=True)
 	type = models.CharField(max_length=10) # FRQ, MCQ
 	question = models.TextField()
 	unit = models.IntegerField()
@@ -31,6 +33,7 @@ class Question(models.Model):
 		}
 
 class Asset(models.Model):
+	id = models.AutoField(primary_key=True)
 	url = models.URLField()
 	questions = models.ManyToManyField(Question)
 

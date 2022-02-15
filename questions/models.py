@@ -23,7 +23,7 @@ class Question(models.Model):
 		print(c)
 		for i in range(len(c)):
 			choices[LETTERS[i]] = c[i].text
-	
+
 		return {
 			"id": self.id,
 			"question": self.question,

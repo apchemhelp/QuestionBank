@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<form method="POST">
+		{% csrf_token %}
+		<label>Add MCQ</label>
+		<textarea name="question">question</textarea>
+		<input type="number" name="unit" placeholder="unit">
+		
+		<input type="text" placeholder="option A" name="a">
+		<input type="text" placeholder="option B" name="b">
+		<input type="text" placeholder="option C" name="c">
+		<input type="text" placeholder="option D" name="d">
+		<input type="text" placeholder="option E" name="e">
+		<input type="text" placeholder="Correct Option" name="correct">
+
+		<input type="submit">
+	</form>
+</body>
+</html>

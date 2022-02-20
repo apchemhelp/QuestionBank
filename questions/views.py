@@ -57,7 +57,7 @@ def add_question(request):
 			if correct == "E":
 				question.correct = e
 		question.save()
-		
+
 		return HttpResponse("success")
 
 	else:
